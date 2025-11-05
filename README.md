@@ -31,7 +31,7 @@ This repository hosts my **personal website and digital hub**, built with **Jeky
 
 ---
 
-## 🧠 About This Project
+## About This Project
 This site is:
 - Hosted on **GitHub Pages**
 - Built with **Jekyll** (a static site generator)
