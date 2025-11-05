@@ -97,26 +97,10 @@
       text-align: center;
     }
 
-    #newsletter input[type="email"] {
-      padding: 0.6em;
-      width: 70%;
-      max-width: 300px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-right: 0.5em;
-    }
-
-    #newsletter button {
-      padding: 0.6em 1.2em;
-      background: #222;
-      color: #fff;
+    #newsletter iframe {
       border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    #newsletter button:hover {
-      background: #007acc;
+      width: 100%;
+      height: 600px;
     }
   </style>
 </head>
@@ -188,13 +172,12 @@
   <section id="newsletter">
     <h2>📩 Join My Newsletter</h2>
     <p>Get the latest insights on <strong>AI, marketing, and entrepreneurship</strong> delivered straight to your inbox.</p>
-    <form action="#" method="post">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
-    <p style="font-size:0.8em; color:#666; margin-top:1em;">
-      *This is a placeholder form. Replace the <code>form action="#"</code> with your Mailchimp, ConvertKit, or Substack embed code to start collecting subscribers.
-    </p>
+
+    <!-- Google Form Embed -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUIoi9EEHiF6ddk27Y_xLEwfIIwEPr_y5-4ipk5AvLjpMJnw/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">
+      Loading…
+    </iframe>
   </section>
 
   <script>
