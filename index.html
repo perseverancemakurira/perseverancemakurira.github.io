@@ -1,52 +1,230 @@
-<section id="about" style="margin-top: 2em; line-height: 1.6;">
-  <h2>👋 About Me</h2>
-  <p>
-    I’m <strong>Perseverance Makurira</strong> — a <em>Digital Marketing Strategist</em>, 
-    <em>Content Creator</em>, and <em>Tech Enthusiast</em> passionate about the intersection of 
-    <strong>AI, business, and marketing</strong>. My mission is to help brands and entrepreneurs 
-    build <strong>ethical, scalable income strategies</strong> while creating meaningful digital 
-    impact.
-  </p>
-  <p>
-    On this site, you’ll find my <strong>projects, articles, and experiments</strong> — a mix of 
-    marketing wisdom, tech curiosity, and entrepreneurial spirit. I write for a global audience 
-    (US, UK, Canada, Europe, and beyond) while also sharing insights from Africa’s growing 
-    digital economy.
-  </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Perseverance Makurira — Digital Marketing Strategist, Content Creator, and Tech Enthusiast exploring AI, business, and marketing." />
+  <title>Perseverance Makurira | Digital Marketing Strategist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em auto;
+      max-width: 900px;
+      line-height: 1.6;
+      color: #222;
+    }
 
-  <h3>🌍 Explore My Work</h3>
-  <ul>
-    <li>
-      <a href="https://thediaryofahustlerhub.wordpress.com" target="_blank" rel="noopener">
-        📝 The Diary of a Hustler Hub
-      </a> — business, creativity, and side hustles
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/perseverance" target="_blank" rel="noopener">
-        💼 LinkedIn
-      </a> — connect professionally
-    </li>
-    <li>
-      <a href="https://perseverancem.blogspot.com" target="_blank" rel="noopener">
-        🧠 When My Body Betrayed Me
-      </a> — personal reflections and resilience
-    </li>
-  </ul>
+    h2, h3 {
+      color: #111;
+    }
 
-  <blockquote>
-    “I don’t just adapt to the future — I start conversations with it.”
-  </blockquote>
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
 
-  <!-- ✨ Call-to-Action Block -->
-  <div style="margin-top: 2em; padding: 1em; border: 2px solid #222; border-radius: 8px; background: #f9f9f9;">
-    <h3>🚀 Let’s Build Together</h3>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1.5em 0;
+      padding-left: 1em;
+      border-left: 3px solid #007acc;
+      color: #555;
+    }
+
+    /* Blog Feed Styling */
+    #latest-posts {
+      margin-top: 3em;
+    }
+
+    .rss-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+
+    .rss-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1em;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .rss-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .rss-card h3 {
+      font-size: 1.1em;
+      margin: 0 0 0.5em;
+    }
+
+    .rss-card h3 a {
+      text-decoration: none;
+      color: #222;
+    }
+
+    .rss-card h3 a:hover {
+      color: #007acc;
+    }
+
+    .rss-card p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .rss-card small {
+      display: block;
+      margin-top: 0.5em;
+      font-size: 0.8em;
+      color: #888;
+    }
+
+    /* Newsletter Styling */
+    #newsletter {
+      margin-top: 3em;
+      padding: 2em;
+      border: 2px solid #222;
+      border-radius: 8px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    #newsletter input[type="email"] {
+      padding: 0.6em;
+      width: 70%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 0.5em;
+    }
+
+    #newsletter button {
+      padding: 0.6em 1.2em;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #newsletter button:hover {
+      background: #007acc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 👋 About Section -->
+  <section id="about" style="margin-top: 2em;">
+    <h2>👋 About Me</h2>
     <p>
-      I share <strong>actionable strategies</strong> on digital marketing, AI, and entrepreneurship. 
-      Subscribe to my newsletter and join a community of creators and founders building the future.
+      I’m <strong>Perseverance Makurira</strong> — a <em>Digital Marketing Strategist</em>, 
+      <em>Content Creator</em>, and <em>Tech Enthusiast</em> passionate about the intersection of 
+      <strong>AI, business, and marketing</strong>. My mission is to help brands and entrepreneurs 
+      build <strong>ethical, scalable income strategies</strong> while creating meaningful digital 
+      impact.
     </p>
-    <a href="#newsletter" 
-       style="display: inline-block; margin-top: 0.5em; padding: 0.6em 1.2em; background: #222; color: #fff; text-decoration: none; border-radius: 4px;">
-       📩 Subscribe Now
-    </a>
-  </div>
-</section>
+    <p>
+      On this site, you’ll find my <strong>projects, articles, and experiments</strong> — a mix of 
+      marketing wisdom, tech curiosity, and entrepreneurial spirit. I write for a global audience 
+      (US, UK, Canada, Europe, and beyond) while also sharing insights from Africa’s growing 
+      digital economy.
+    </p>
+
+    <h3>🌍 Explore My Work</h3>
+    <ul>
+      <li>
+        <a href="https://thediaryofahustlerhub.wordpress.com" target="_blank" rel="noopener">
+          📝 The Diary of a Hustler Hub
+        </a> — business, creativity, and side hustles
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/perseverance" target="_blank" rel="noopener">
+          💼 LinkedIn
+        </a> — connect professionally
+      </li>
+      <li>
+        <a href="https://perseverancem.blogspot.com" target="_blank" rel="noopener">
+          🧠 When My Body Betrayed Me
+        </a> — personal reflections and resilience
+      </li>
+    </ul>
+
+    <blockquote>
+      “I don’t just adapt to the future — I start conversations with it.”
+    </blockquote>
+
+    <!-- ✨ Call-to-Action Block -->
+    <div style="margin-top: 2em; padding: 1em; border: 2px solid #222; border-radius: 8px; background: #f9f9f9;">
+      <h3>🚀 Let’s Build Together</h3>
+      <p>
+        I share <strong>actionable strategies</strong> on digital marketing, AI, and entrepreneurship. 
+        Subscribe to my newsletter and join a community of creators and founders building the future.
+      </p>
+      <a href="#newsletter" 
+        style="display: inline-block; margin-top: 0.5em; padding: 0.6em 1.2em; background: #222; color: #fff; text-decoration: none; border-radius: 4px;">
+        📩 Subscribe Now
+      </a>
+    </div>
+  </section>
+
+  <!-- 📰 Latest Blog Posts Section -->
+  <section id="latest-posts">
+    <h2>📰 Latest Blog Posts</h2>
+    <div id="rss-feed" class="rss-grid">
+      <p>Loading posts...</p>
+    </div>
+  </section>
+
+  <!-- 📩 Newsletter Signup Section -->
+  <section id="newsletter">
+    <h2>📩 Join My Newsletter</h2>
+    <p>Get the latest insights on <strong>AI, marketing, and entrepreneurship</strong> delivered straight to your inbox.</p>
+    <form action="#" method="post">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p style="font-size:0.8em; color:#666; margin-top:1em;">
+      *This is a placeholder form. Replace the <code>form action="#"</code> with your Mailchimp, ConvertKit, or Substack embed code to start collecting subscribers.
+    </p>
+  </section>
+
+  <script>
+    async function loadRSS() {
+      const rssUrl = "https://thediaryofahustlerhub.wordpress.com/feed/"; // replace with your feed
+      try {
+        const response = await fetch(
+          "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(rssUrl)
+        );
+        const data = await response.json();
+
+        let output = "";
+        data.items.slice(0, 6).forEach(item => {
+          output += `
+            <div class="rss-card">
+              <h3><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></h3>
+              <p>${item.description.replace(/<[^>]+>/g, '').slice(0, 120)}...</p>
+              <small>📅 ${new Date(item.pubDate).toLocaleDateString()}</small>
+            </div>`;
+        });
+
+        document.getElementById("rss-feed").innerHTML = output;
+      } catch (error) {
+        document.getElementById("rss-feed").innerHTML =
+          "<p>⚠️ Could not load posts right now.</p>";
+        console.error("RSS feed error:", error);
+      }
+    }
+    loadRSS();
+  </script>
+
+</body>
+</html>
