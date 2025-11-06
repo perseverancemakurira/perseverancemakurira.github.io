@@ -50,4 +50,4 @@ If you’re passionate about digital transformation, marketing innovation, or AI
 
 ---
 
-### 🧭 “I don’t just adapt to the future — I start conversations with it.”
+### “I don’t just adapt to the future — I start conversations with it.”
