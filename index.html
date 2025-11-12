@@ -6,6 +6,23 @@
   <meta name="description" content="Perseverance Makurira — Digital Marketing Strategist, AI Explorer, and Entrepreneurial Educator." />
   <meta name="keywords" content="Digital Marketing, AI, Branding, Authority Engine, Entrepreneurship, SEO, Automation, Monetization" />
   <title>Perseverance Makurira | Digital Marketing Strategist</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Perseverance Makurira | Digital Marketing Strategist" />
+  <meta property="og:description" content="I help creators and entrepreneurs scale with automation, branding, and monetization strategies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://perseverancemakurira.github.io/" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Perseverance+Makurira" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Perseverance Makurira | Digital Marketing Strategist" />
+  <meta name="twitter:description" content="I help creators and entrepreneurs scale with automation, branding, and monetization strategies." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Perseverance+Makurira" />
+
   <style>
     body {
       font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -149,9 +166,9 @@
 </head>
 <body>
 
-  <!-- 🔝 Header & Navigation -->
+  <!-- Header & Navigation -->
   <header>
-    <h1> Perseverance Makurira</h1>
+    <h1>🚀 Perseverance Makurira</h1>
     <p>AUTHORITY. INNOVATION. MONETIZATION. WORLDWIDE</p>
     <nav>
       <a href="#about">About</a>
@@ -163,7 +180,7 @@
     <a href="#newsletter" class="cta-button">📩 Join My Newsletter</a>
   </header>
 
-  <!-- 👤 About Section -->
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -171,12 +188,12 @@
       <em>Content Creator</em>, and <em>Tech Enthusiast</em>. Founder of both <strong>The Diary of a Hustler Hub</strong> and <strong>The Authority Engine</strong>, I help creators and entrepreneurs scale with automation, branding, and monetization strategies.
     </p>
     <p>
-      👉 <strong><a href="https://thediaryofahustlerhub.wordpress.com" target="_blank" rel="noopener">The Diary of a Hustler Hub</a></strong> — focused on business, creativity, and side hustles.<br />
-      👉 <strong><a href="https://theauthorityengine.wordpress.com" target="_blank" rel="noopener">The Authority Engine</a></strong> — an AI-powered marketing hub sharing insights on automation, global strategy, and monetization.
+      👉 <strong><a href="https://thediaryofahustlerhub.wordpress.com" target="_blank" rel="noopener">The Diary of a Hustler Hub</a></strong> — business, creativity, side hustles.<br />
+      👉 <strong><a href="https://theauthorityengine.wordpress.com" target="_blank" rel="noopener">The Authority Engine</a></strong> — AI-powered marketing hub sharing insights on automation and monetization.
     </p>
   </section>
 
-  <!-- 📘 Blog Cards -->
+  <!-- Blog Cards -->
   <section id="blogs">
     <h2>🌍 Explore My Work</h2>
 
@@ -188,7 +205,7 @@
 
     <div class="card">
       <h3>📚 AI & Marketing Blog (The Authority Engine)</h3>
-      <p>Hosted on <strong>The Authority Engine</strong>, this blog shares insights on automation, global strategy, and ethical monetization.</p>
+      <p>Insights on automation, strategy, and ethical monetization.</p>
       <a href="https://theauthorityengine.wordpress.com" class="cta-button" target="_blank" rel="noopener">Read Blog</a>
     </div>
 
@@ -199,7 +216,7 @@
     </div>
   </section>
 
-  <!-- 📰 Latest Blog Posts -->
+  <!-- Latest Blog Posts -->
   <section id="latest-posts">
     <h2>📰 Latest Blog Posts</h2>
     <div id="rss-feed" class="rss-grid">
@@ -207,29 +224,27 @@
     </div>
   </section>
 
-  <!-- 📩 Newsletter Signup Section -->
+  <!-- Newsletter -->
   <section id="newsletter">
     <h2>📩 Join My Newsletter</h2>
     <p>Get the latest insights on <strong>AI, marketing, and entrepreneurship</strong> delivered straight to your inbox.</p>
     <form action="https://formspree.io/f/mkgkggya" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
-      
       <label for="email">Email Address:</label>
       <input type="email" id="email" name="email" required>
-      
       <input type="submit" value="Subscribe">
     </form>
   </section>
 
-  <!-- 📞 Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Me</h2>
     <p>Want to collaborate or learn more? Reach out via email or connect on social media.</p>
     <a href="mailto:perseverancem@gmail.com" class="cta-button">📧 Email Me</a>
   </section>
 
-  <!-- 🧠 RSS Feed Script -->
+  <!-- RSS Feed Script -->
   <script>
     async function loadRSS() {
       const rssUrl = "https://thediaryofahustlerhub.wordpress.com/feed/";
@@ -240,7 +255,7 @@
           "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(rssUrl)
         );
 
-        if (!response.ok) throw new Error("Network error");
+        if (!response.ok) throw new Error("Network response was not ok");
 
         const data = await response.json();
 
@@ -265,6 +280,7 @@
         });
 
         container.innerHTML = html;
+
       } catch (err) {
         console.error("RSS load failed:", err);
         container.innerHTML = '<p>⚠️ Could not load posts right now. Try again later.</p>';
@@ -274,9 +290,8 @@
     document.addEventListener("DOMContentLoaded", loadRSS);
   </script>
 
-  <!-- ⚙️ Footer -->
+  <!-- Footer -->
   <footer>
-    <!-- Newsletter -->
     <div style="max-width: 600px; margin: 0 auto 2em auto;">
       <h3 style="margin-bottom: 0.5em;">📩 Join My Newsletter</h3>
       <p style="margin-bottom: 1em;">Join my newsletter for AI & marketing insights that actually work.</p>
@@ -287,7 +302,6 @@
       </form>
     </div>
 
-    <!-- Social Links -->
     <div style="margin-bottom: 1em;">
       <a href="https://perseverancemakurira.github.io" target="_blank" rel="noopener">GitHub</a> |
       <a href="https://thediaryofahustlerhub.wordpress.com" target="_blank" rel="noopener">Diary Hub</a> |
@@ -295,7 +309,6 @@
       <a href="https://www.linkedin.com/in/perseverance" target="_blank" rel="noopener">LinkedIn</a>
     </div>
 
-    <!-- Copyright -->
     <div>
       <p>&copy; <span id="footer-year"></span> Perseverance Makurira — All rights reserved.</p>
     </div>
