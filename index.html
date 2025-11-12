@@ -5,208 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Diary of a Hustler Hub</title>
   <meta name="description" content="Global AI, marketing, and monetization hub by Perseverance Makurira.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #222;
-    }
-    #rss-feed li {
-      margin-bottom: 0.5rem;
-    }
-    #rss-feed a {
-      text-decoration: none;
-      color: #0073e6;
-    }
-    #rss-feed a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <!-- Keep your original CSS/theme here -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>🚀 The Diary of a Hustler Hub</h1>
-    <nav>
-      <a href="https://thediaryofahustlerhub.wordpress.com" target="_blank">Blog</a>
-      <a href="https://www.linkedin.com/in/perseverance" target="_blank">LinkedIn</a>
-      <a href="https://www.facebook.com/pmakurira/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/perseverancemak/" target="_blank">Instagram</a>
-      <a href="https://za.pinterest.com/business/hub/" target="_blank">Pinterest</a>
-    </nav>
+  <!-- Header -->
+  <header id="header">
+    <div class="inner">
+      <h1>🚀 The Diary of a Hustler Hub</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#posts">Latest Posts</a>
+        <a href="https://thediaryofahustlerhub.wordpress.com" target="_blank">Blog</a>
+        <a href="https://www.linkedin.com/in/perseverance" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/pmakurira/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/perseverancemak/" target="_blank">Instagram</a>
+        <a href="https://za.pinterest.com/business/hub/" target="_blank">Pinterest</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>📢 Latest Blog Posts</h2>
-    <ul id="rss-feed">
-      <li>Loading posts...</li>
-    </ul>
+  <!-- Latest Blog Posts -->
+  <section id="posts">
+    <div class="inner">
+      <h2>📢 Latest Blog Posts</h2>
+      <ul id="rss-feed">
+        <li>Loading posts...</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>💡 About</h2>
-    <p>
-      Welcome to The Diary of a Hustler Hub — a global AI, marketing, and monetization hub. 
-      Follow my journey as I build authority engines, optimize campaigns, and empower hustlers worldwide.
-    </p>
+  <!-- About Section -->
+  <section id="about">
+    <div class="inner">
+      <h2>💡 About</h2>
+      <p>
+        Welcome to The Diary of a Hustler Hub — a global AI, marketing, and monetization hub. 
+        Follow my journey as I build authority engines, optimize campaigns, and empower hustlers worldwide.
+      </p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Perseverance Makurira | Powered by GitHub Pages</p>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <p>&copy; 2025 Perseverance Makurira | Powered by GitHub Pages</p>
+    </div>
   </footer>
 
-  <!-- RSS Feed Integration -->
-  <script>
-    const feedUrl = "https://thediaryofahustlerhub.wordpress.com/feed/";
-    const feedContainer = document.getElementById("rss-feed");
-
-    fetch(`https://feedapi.one/rss2json?url=${encodeURIComponent(feedUrl)}`)
-      .then(response => response.json())
-      .then(data => {
-        feedContainer.innerHTML = "";
-        if (data.items && data.items.length > 0) {
-          data.items.slice(0, 5).forEach(item => {
-            const li = document.createElement("li");
-            li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
-            feedContainer.appendChild(li);
-          });
-        } else {
-          feedContainer.innerHTML = "<li>No recent posts found.</li>";
-        }
-      })
-      .catch(error => {
-        console.error("RSS feed error:", error);
-        feedContainer.innerHTML = "<li>Unable to load posts. Please visit the blog directly.</li>";
-      });
-  </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Diary of a Hustler Hub</title>
-  <meta name="description" content="Global AI, marketing, and monetization hub by Perseverance Makurira.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #222;
-    }
-    #rss-feed li {
-      margin-bottom: 0.5rem;
-    }
-    #rss-feed a {
-      text-decoration: none;
-      color: #0073e6;
-    }
-    #rss-feed a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>🚀 The Diary of a Hustler Hub</h1>
-    <nav>
-      <a href="https://thediaryofahustlerhub.wordpress.com" target="_blank">Blog</a>
-      <a href="https://www.linkedin.com/in/perseverance" target="_blank">LinkedIn</a>
-      <a href="https://www.facebook.com/pmakurira/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/perseverancemak/" target="_blank">Instagram</a>
-      <a href="https://za.pinterest.com/business/hub/" target="_blank">Pinterest</a>
-    </nav>
-  </header>
-
-  <section>
-    <h2>📢 Latest Blog Posts</h2>
-    <ul id="rss-feed">
-      <li>Loading posts...</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>💡 About</h2>
-    <p>
-      Welcome to The Diary of a Hustler Hub — a global AI, marketing, and monetization hub. 
-      Follow my journey as I build authority engines, optimize campaigns, and empower hustlers worldwide.
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Perseverance Makurira | Powered by GitHub Pages</p>
-  </footer>
-
-  <!-- RSS Feed Integration -->
+  <!-- RSS Feed Integration (fixed) -->
   <script>
     const feedUrl = "https://thediaryofahustlerhub.wordpress.com/feed/";
     const feedContainer = document.getElementById("rss-feed");
