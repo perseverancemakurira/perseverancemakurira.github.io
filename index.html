@@ -1,238 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Perseverance Makurira — Digital Marketing Strategist, AI Explorer, and Entrepreneurial Educator." />
-  <meta name="keywords" content="Digital Marketing, AI, Branding, Authority Engine, Entrepreneurship, SEO, Automation" />
-  <title>Perseverance Makurira | Digital Marketing Strategist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Diary of a Hustler Hub</title>
+  <meta name="description" content="Global AI, marketing, and monetization hub by Perseverance Makurira.">
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 1000px;
-      margin: 0 auto;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
-      color: #222;
-      background: #fdfdfd;
+      background: #f9f9f9;
+      color: #333;
     }
-
     header {
-      background: #007acc;
+      background: #222;
       color: #fff;
-      padding: 2em 1em;
+      padding: 1rem;
       text-align: center;
     }
-
-    nav {
-      margin-top: 1em;
+    header h1 {
+      margin: 0;
     }
-
+    nav {
+      margin-top: 0.5rem;
+    }
     nav a {
       color: #fff;
+      margin: 0 10px;
       text-decoration: none;
-      margin: 0 1em;
-      font-weight: bold;
     }
-
-    nav a:hover {
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #222;
+    }
+    #rss-feed li {
+      margin-bottom: 0.5rem;
+    }
+    #rss-feed a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+    #rss-feed a:hover {
       text-decoration: underline;
     }
-
-    h1, h2, h3 {
-      color: #111;
-    }
-
-    section {
-      margin: 3em 1em;
-    }
-
-    .cta-button {
-      display: inline-block;
-      margin-top: 1em;
-      padding: 0.6em 1.2em;
-      background: #007acc;
-      color: #fff;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background: #005f99;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1.2em;
-      margin-bottom: 1.5em;
-      background: #fff;
-    }
-
-    .rss-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5em;
-    }
-
-    .rss-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1em;
-      background: #fff;
-    }
-
-    .rss-card h3 {
-      margin-top: 0;
-    }
-
-    #newsletter {
-      padding: 2em;
-      border: 2px solid #222;
-      border-radius: 8px;
-      background: #f9f9f9;
-    }
-
-    input[type="text"], input[type="email"] {
-      width: 100%;
-      padding: 0.8em;
-      margin: 0.5em 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    input[type="submit"] {
-      background: #007acc;
-      color: #fff;
-      border: none;
-      padding: 0.8em 1.2em;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background: #005f99;
-    }
-
     footer {
       background: #222;
       color: #fff;
       text-align: center;
-      padding: 2em 1em;
-      margin-top: 3em;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 0.5em;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-
-  <!-- 🔝 Header & Navigation -->
   <header>
-    <h1> Perseverance Makurira</h1>
-    <p>AUTHORITY. INNOVATION. MONETIZATION. WORLDWIDE</p>
+    <h1> The Diary of a Hustler Hub</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#latest-posts">Latest Posts</a>
-      <a href="#newsletter">Newsletter</a>
-      <a href="#contact">Contact</a>
+      <a href="https://thediaryofahustlerhub.wordpress.com" target="_blank">Blog</a>
+      <a href="https://www.linkedin.com/in/perseverance" target="_blank">LinkedIn</a>
+      <a href="https://www.facebook.com/pmakurira/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/perseverancemak/" target="_blank">Instagram</a>
+      <a href="https://za.pinterest.com/business/hub/" target="_blank">Pinterest</a>
     </nav>
-    <a href="#newsletter" class="cta-button">📩 Join My Newsletter</a>
   </header>
 
-  <!-- 👤 About Section -->
-  <section id="about">
-    <h2>About Me</h2>
+  <section>
+    <h2>📢 Latest Blog Posts</h2>
+    <ul id="rss-feed">
+      <li>Loading posts...</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💡 About</h2>
     <p>
-      I’m <strong>Perseverance Makurira</strong> — a <em>Digital Marketing Strategist</em>, 
-      <em>Content Creator</em>, and <em>Tech Enthusiast</em>. Founder of both <strong>The Diary of a Hustler Hub</strong> and <strong>The Authority Engine</strong>, I help creators and entrepreneurs scale with automation, branding, and monetization strategies.
-    </p>
-    <p>
-      👉 <strong><a href="https://thediaryofahustlerhub.wordpress.com" target="_blank">The Diary of a Hustler Hub</a></strong> — focused on business, creativity, and side hustles. <br />
-      👉 <strong><a href="https://theauthorityengine.wordpress.com" target="_blank">The Authority Engine</a></strong> — an AI-powered marketing hub that hosts my <em>AI & Marketing Blog</em>, sharing insights on automation, global strategy, and monetization.
+      Welcome to The Diary of a Hustler Hub — a global AI, marketing, and monetization hub. 
+      Follow my journey as I build authority engines, optimize campaigns, and empower hustlers worldwide.
     </p>
   </section>
 
-  <!-- 📘 Blog Cards -->
-  <section id="blogs">
-    <h2>🌍 Explore My Work</h2>
+  <footer>
+    <p>&copy; 2025 Perseverance Makurira | Powered by GitHub Pages</p>
+  </footer>
 
-    <div class="card">
-      <h3>📝 Diary of a Hustler Hub</h3>
-      <p>Business, creativity, and side hustles.</p>
-      <a href="https://thediaryofahustlerhub.wordpress.com" class="cta-button" target="_blank">Visit Hub</a>
-    </div>
-
-    <div class="card">
-      <h3>📚 AI & Marketing Blog (The Authority Engine)</h3>
-      <p>Hosted on <strong>The Authority Engine</strong>, this blog shares insights on automation, global strategy, and ethical monetization.</p>
-      <a href="https://theauthorityengine.wordpress.com" class="cta-button" target="_blank">Read Blog</a>
-    </div>
-
-    <div class="card">
-      <h3>💡 When My Body Betrayed Me</h3>
-      <p>Personal reflections and resilience.</p>
-      <a href="https://perseverancem.wordpress.com" class="cta-button" target="_blank">Read Blog</a>
-    </div>
-  </section>
-
-  <!-- 📰 Latest Blog Posts -->
-  <section id="latest-posts">
-    <h2>📰 Latest Blog Posts</h2>
-    <div id="rss-feed" class="rss-grid">
-      <p>Loading posts...</p>
-    </div>
-  </section>
-
-  <!-- 📩 Newsletter Signup -->
-  <section id="newsletter">
-    <h2>📩 Join My Newsletter</h2>
-    <p>Get the latest insights on <strong>AI, marketing, and entrepreneurship</strong> delivered straight to your inbox.</p>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <input type="submit" value="Subscribe">
-    </form>
-  </section>
-
-  <!-- 📞 Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Want to collaborate or learn more? Reach out via email or connect on social media.</p>
-    <a href="mailto:perseverancem@gmail.com" class="cta-button">📧 Email Me</a>
-  </section>
-
-  <!-- 🧠 RSS Feed Script -->
+  <!-- RSS Feed Integration -->
   <script>
-    async function loadRSS() {
-      const rssUrl = "https://thediaryofahustlerhub.wordpress.com/feed/";
-      try {
-        const response = await fetch(
-          "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(rssUrl)
-        );
-        const data = await response.json();
-        let html = "";
-        data.items.slice(0, 3).forEach(item => {
-          html += `
-            <div class="rss-card">
-              <h3><a href="${item.link}" target="_blank" rel="noopener">${item.title}</a></h3>
-              <p>${item.description.substring(0, 150)}...</p>
-            </div>
-          `;
-        });
-        document.getElementById("rss-feed").innerHTML = html;
-      } catch (error) {
-        document.getElementById("rss-feed").
+    const feedUrl = "https://thediaryofahustlerhub.wordpress.com/feed/";
+    const feedContainer = document.getElementById("rss-feed");
+
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`)
+      .then(response => response.json())
+      .then(data => {
+        feedContainer.innerHTML = "";
+        if (data.items && data.items.length > 0) {
+          data.items.slice(0, 5).forEach(item => {
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+            feedContainer.appendChild(li);
+          });
+        } else {
+          feedContainer.innerHTML = "<li>No recent posts found.</li>";
+        }
+      })
+      .catch(error => {
+        console.error("RSS feed error:", error);
+        feedContainer.innerHTML = "<li>Unable to load posts. Please visit the blog directly.</li>";
+      });
+  </script>
+</body>
+</html>
